@@ -1,6 +1,6 @@
 ﻿using System;
 using static System.Console;
-class HomeSales
+public class HomeSales
 {
     public static void Main()
     {
