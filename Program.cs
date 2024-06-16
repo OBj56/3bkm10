@@ -3,7 +3,7 @@ using static System.Console;
 
 class Perfect
 {
-    static void Main()
+   public static void Main()
     {
        Write("");
         int number = int.Parse(ReadLine());
@@ -18,7 +18,7 @@ class Perfect
         }
     }
 
-    static bool Perfection(int number)
+   public static bool Perfection(int number)
     {
         int sum = 0;
         for (int a = 1; a < number; a++)
