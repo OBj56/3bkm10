@@ -57,7 +57,9 @@ namespace ConsoleApp1
             int grandTotal = daniel + edward + francis;
 
             WriteLine();
-            WriteLine($"Grand Total: {grandTotal}");
+            string value = $"Grand Total: {grandTotal}";
+            value = grandTotal.ToString("C0");
+            WriteLine(value);
             WriteLine($"Highest Sale: {topearner}");
 
             ReadKey();
