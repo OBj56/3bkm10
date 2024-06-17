@@ -17,7 +17,7 @@ namespace ConsoleApp1
 
 
             int mostmoney = 0;
-            WriteLine("Enter the salesperson initials (D, E, or F) or Z to quit:");
+            WriteLine("Enter the salesperson initials (D, E, or F) ");
 
 
             while (true)
