@@ -10,12 +10,12 @@ namespace ConsoleApp2
             string[] names = { "D", "E", "F" };
             char[] initials = { 'D', 'E', 'F' };
             int[] sales = new int[3];
-
-            char topearner = '\0';
             int mostmoney = 0;
 
             WriteLine("Enter the salesperson initials (D, E, or F)");
 
+
+            var topearner = '\0';
             while (true)
             {
                 Write("salesperson: ");
@@ -49,9 +49,14 @@ namespace ConsoleApp2
             WriteLine();
             string cash = grandTotal.ToString("C2");
             WriteLine($"Grand Total: {cash}");
-            WriteLine($"Highest Sale: {names[Array.IndexOf(initials, topearner)]}");
+            e111(names, initials);
 
             ReadKey();
+
+            static void e111(string[] names, char[] initials)
+            {
+                WriteLine($"Highest Sale: {names[Array.IndexOf(initials, '\0')]}");
+            }
         }
     }
 }
