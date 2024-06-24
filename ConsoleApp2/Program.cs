@@ -44,19 +44,13 @@ namespace ConsoleApp2
                 }
             }
 
-            int grandTotal = sales[0] + sales[1] + sales[2];
 
             WriteLine();
-            string cash = grandTotal.ToString("C2");
+            string cash = (sales[0] + sales[1] + sales[2]).ToString("C0");
             WriteLine($"Grand Total: {cash}");
-            e111(names, initials);
+            WriteLine($"Highest Sale: {names[Array.IndexOf(initials, topearner)]}");
 
             ReadKey();
-
-            static void e111(string[] names, char[] initials)
-            {
-                WriteLine($"Highest Sale: {names[Array.IndexOf(initials, '\0')]}");
-            }
         }
     }
 }
