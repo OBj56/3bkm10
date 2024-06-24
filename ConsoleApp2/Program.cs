@@ -28,7 +28,7 @@ namespace ConsoleApp2
                 int index = Array.IndexOf(initials, input);
                 if (index == -1)
                 {
-                    WriteLine("Error: Invalid salesperson selected. Please try again.");
+                    WriteLine("intermediate output: Error, invalid salesperson selected, please try again.");
                     continue;
                 }
 
